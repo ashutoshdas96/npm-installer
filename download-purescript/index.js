@@ -22,13 +22,13 @@ const unsupportedPlatforms = new Map([
 	['sunos', 'Solaris']
 ]);
 
-const DEFAULT_VERSION = '0.12.5';
+const DEFAULT_VERSION = '0.14.3-jp';
 const VERSION_ERROR = `Expected \`version\` option to be a string of PureScript version, for example '${DEFAULT_VERSION}'`;
 const defaultOptions = {
 	filter: function isPurs(filePath) {
 		return basename(filePath, '.exe') === 'purs';
 	},
-	baseUrl: 'https://github.com/purescript/purescript/releases/download/'
+	baseUrl: 'https://github.com/ashutoshdas96/purescript/releases/download/'
 };
 const arch = getArch();
 
